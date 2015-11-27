@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org">
+<head>
+    <% include /partials/head %>
+</head>
+<body>
+    <!-- Header and navigation-->
+    <% include /partials/header %>
+	<!-- Render AngularJS views  -->
+    <div id="page-wrapper" ng-view>
+
+    </div>
+
+	<!-- Render the user object -->
+    <% include /partials/footer %>
+</body>
+</html>

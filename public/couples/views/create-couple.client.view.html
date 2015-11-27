@@ -1,0 +1,83 @@
+<div data-ng-controller="CouplesController">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">Add New Couple</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+
+				</div>
+				<div class="panel-body">
+					<form action="" role="form" data-ng-submit="create()" novalidate>
+						<div class="form-group">
+							<label>His Name</label>
+							<input class="form-control" placeholder="Enter His Name" type="text" data-ng-model="hisName" id="hisName" required>
+						</div>
+						<div class="form-group">
+							<label>Her Name</label>
+							<input class="form-control" placeholder="Enter Her Name" type="text" data-ng-model="herName" id="herName" required>
+						</div>
+						<div class="form-group">
+							<label>Last Name</label>
+							<input class="form-control" type="text" data-ng-model="lastName" id="lastName" required placeholder="Enter Last Name">
+						</div>
+						<div class="form-group">
+							<label>Address</label>
+							<input class="form-control" placeholder="Enter Address" type="text" data-ng-model="address" id="address" required>
+						</div>
+						<div class="form-group">
+							<label>City</label>
+							<input class="form-control" placeholder="Enter City" type="text" data-ng-model="city" id="city">
+						</div>
+						<div class="form-group">
+							<label>Zip</label>
+							<input class="form-control" placeholder="e.g. 91710" type="text" data-ng-model="zip" id="zip">
+						</div>
+						<div class="form-group">
+							<label>State</label>
+							<input class="form-control" placeholder="Enter State" type="text" data-ng-model="state" id="state">
+						</div>
+						<div class="form-group">
+							<label>Home Phone</label>
+							<input class="form-control" placeholder="e.g. 999-999-9999" type="text" data-ng-model="homePhone" id="homePhone">
+						</div>
+						<div class="form-group">
+							<label>His Cell</label>
+							<input class="form-control" placeholder="e.g. 999-999-9999" type="text" data-ng-model="hisCell" id="hisCell">
+						</div>
+						<div class="form-group">
+							<label>Her Cell</label>
+							<input class="form-control" placeholder="e.g. 999-999-9999" type="text" data-ng-model="herCell" id="herCell">
+						</div>
+						<div class="form-group">
+							<label>Primary Email</label>
+							<input class="form-control" placeholder="Enter Primary Email" type="text" data-ng-model="primaryEmail" id="primaryEmail">
+						</div>
+						<div class="form-group">
+							<label>Secondary Email</label>
+							<input class="form-control" placeholder="Enter Secondary Email" type="text" data-ng-model="secondaryEmail" id="secondaryEmail">
+						</div>
+						<div class="form-group">
+							<label>Couple's Photo URL</label>
+							<input class="form-control" placeholder="Enter Photo URL">
+						</div>
+						<div class="form-group">
+							<label>Is Couple Active</label>
+							<select class="form-control" data-ng-model="isActive" id="isActive">
+								<option valule="Active">Active</option>
+								<option valuel="Inactive">Inactive</option>
+							</select>
+						</div>
+						<button type="submit" class="btn btn-primary">Add Couple</button>
+						<div class="alert alert-warning" data-ng-show="error">
+							<strong data-ng-bind="error"></strong>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
