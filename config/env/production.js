@@ -3,7 +3,7 @@
 
 // Set the 'production' environment configuration object
 module.exports = {
-	db: 'mongodb://localhost/mean-production',
+	db: 'mongodb://jladmin:october204@@c1001.candidate.36.mongolayer.com:11001,candidate.36.mongolayer.com:11001,candidate.37.mongolayer.com:11014/MEtool?replicaSet=set-563e8b914e6946afc40015a5',
 	sessionSecret: 'productionSessionSecret',
 	facebook: {
 		clientID: 'Facebook Application ID',
